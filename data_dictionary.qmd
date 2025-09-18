@@ -1,0 +1,13 @@
+---
+title: "Data Dictionary"
+date: "today"
+format: 
+  html: 
+    embed-resources: true
+---
+```{r}
+dat <- read.csv("data.csv")
+datawizard::print_md(datawizard::data_codebook(dat))
+```
+
+The penguins data stored in data.csv by Allison Horst, Alison Hill, and Kristen Gorman available from https://allisonhorst.github.io/palmerpenguins/ are licensed under CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/
